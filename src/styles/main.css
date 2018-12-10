@@ -1,0 +1,15 @@
+#sectionid{
+    padding: 5px;
+    margin: 5px;
+}
+#display-container{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+body{
+    background: lightcyan;
+    padding: 100px;
+    padding-block-start: 5px;
+}
