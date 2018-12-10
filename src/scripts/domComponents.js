@@ -15,7 +15,7 @@ const parkHTML = (parkk) => {
     displayContainer.innerHTML += parkHTML(parkobj.park_name, parkobj.mapped_location_address
     // articleContainer.innerHTML += parkSection;
     )}
-fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?mapped_location_city=Nashville`)
+fetch("https://data.nashville.gov/resource/xbru-cfzi.json?mapped_location_city=Nashville")
     .then(parks => parks.json())
     .then(parsedParks => {
         parsedParks.forEach(parkobj => {
@@ -27,5 +27,3 @@ fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?mapped_location_city=N
        //const articleContainer = document.querySelector("#display-container");
        //displayContainer.innerHTML += parkHTML(parkobj.park_name, parkobj.mapped_location_address);
         })})
-    
-    

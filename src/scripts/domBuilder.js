@@ -20,7 +20,6 @@ appendInputForm () {
     <input type= "text" name="restaurants" id="restaurants-search" value="meetups by topic">
     <button type="button" id="search-button">Search Restaurants</button>
     </section>
-    
     <section id="sectionid">
     <input type= "text" name="meetups" id="meetups-search" value="concerts by genre">
     <button type="button" id="search-button">Search MeetUps</button>
@@ -28,7 +27,7 @@ appendInputForm () {
     `)
 }}
 const myResults= {
-    appendResults(){
+appendResults(){
         let resultsContainer = document.querySelector("#results-container");
         resultsContainer.innerHTML= `
         <div>
@@ -39,10 +38,9 @@ const myResults= {
         `
         }
     }
-    
     const myItinerary=  {
-    appendItenerary(){    
-        let itineraryContainer = document.querySelector("#itinerary-container");
+    appendItenerary(){
+    let itineraryContainer = document.querySelector("#itinerary-container");
         itineraryContainer.innerHTML=`
         <div>
             <h2>My itinerary</h2>
