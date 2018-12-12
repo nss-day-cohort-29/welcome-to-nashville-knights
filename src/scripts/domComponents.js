@@ -1,25 +1,25 @@
-const myResults = {
-  appendResults() {
+let myResults = {
+  appendResults(name, address) {
     let resultsContainer = document.querySelector("#results-container");
-    resultsContainer.innerHTML = `
-          <div>
-              <h2>Results</h2>
-              <p>park_name</p>
-              <p>mapped_location_address</p>
+    resultsContainer.innerHTML += `
+          <div id="parkDIV>
+              <h4 id="parkinfo">${name}</h4>
+              <p id="parkinfos">${address}</p>
+              <button type="save" id="save-parks">Save</button>
           </div> 
           `
-  }
+      }
 }
-const myItinerary = {
-  appendItenerary() {
+let myItinerary = {
+  appendItinerary(name, address) {
     let itineraryContainer = document.querySelector("#itinerary-container");
-    itineraryContainer.innerHTML = `
-      <div>
+    itineraryContainer.innerHTML += `
+      <div id="parkpaste">
           <h2>My itinerary</h2>
-          <p>Park</p>
-          <p>Restaurant</p>
-          <p>Meetup</p>
-          <p>Concert</p>
-      </div>`
+          <div id="parkDIV>
+              <h4 id="parkinfo">${name}</h4>
+              <p id="parkinfo">${address}</p>
+          </div> 
+          </div>`
   }
 }
