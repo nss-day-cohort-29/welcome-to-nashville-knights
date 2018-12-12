@@ -9,13 +9,13 @@ const domBuilder = {
     
     <section id="sectionid">
         <select id="parks-search">
+            <option value="disc_golf">Disc Golf</option>
             <option value="ada_accessible">Handicap Accessible</option>
             <option value="baseball_fields">Baseball Fields</option>
             <option value="basketball_courts">Basketball Courts</option>
             <option value="dog_park">Dog Park</option>
             <option value="hiking_trails">Hiking Trails</option>
             <option value="swimming_pool">Swimming Pool</option>
-            <option value="disc_golf">Disc Golf</option>
         </select>
         <button type="button" id="parks-search-button">Search Parks</button>
     </section>
@@ -37,4 +37,5 @@ const domBuilder = {
     `
     }
 }
+
 
